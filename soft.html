@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>软件工具</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/style_main.css" />
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<style>
+			/* 垂直导航栏 */
+			.boxl {
+				width: 15%;
+				height: 238px;
+				float: left;
+				line-height: 40px;
+			}
+
+			/* 垂直导航以及相关属性 */
+			ul {
+				list-style-type: none;
+				/* 列表标记类型:无 */
+				margin: 0;
+				padding: 0;
+			}
+
+			ul a {
+				width: 100%;
+				display: block;
+				/* 块级元素 */
+				color: #FFFFFF;
+				padding: 5px 2px;
+				/* 边框填充 */
+				font-size: 20px;
+				/* 字号 */
+				text-align: center;
+				/* 居中 */
+				border-radius: 10px;
+				/* 圆角 */
+				text-decoration: none;
+				/* 文本修饰属性:无 */
+				background-color: #333;
+				border: 1px solid #ddd;
+				/* 实线边框 */
+			}
+
+			ul a:hover,
+			a:active {
+				background-color: #ddd;
+				color: black;
+			}
+
+			/* 展示盒子 */
+			.boxr {
+				width: 85%;
+				height: 500px;
+				float: left;
+				padding: 5px;
+			}
+
+			iframe {
+				border-radius: 25px;
+				/* 内联框架 */
+			}
+
+			/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+			@media screen and (max-width: 400px) {
+				.boxr {
+					width: 100%;
+					height: 740px;
+					padding: 15px;
+				}
+
+				.boxl {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<div class="navbar">
+			<img src="img/head.png" />
+			<a href="home.html">博客首页</a>
+			<a href="article.html">文章精选</a>
+			<a href="soft.html">软件工具</a>
+			<a href="navigation.html">网址聚合</a>
+			<div class="dropdown">
+				<button name="#top" class="dropbtn">联系方式</button>
+				<div class="dropdown-content">
+					<a href="404.html">电子邮箱</a>
+					<a href="404.html">办公地址</a>
+					<a href="404.html">固定电话</a>
+				</div>
+			</div>
+		</div>
+		<br /><br /><br />
+		<div class="boxl">
+			<br />
+			<ul>
+				<li><a href="404.html" target="iframe"><i class="fa fa-android" style="font-size:20px;"></i>&nbsp;Android</a></li>
+				<li><a href="404.html" target="iframe"><i class="fa fa-apple" style="font-size:20px"></i>&nbsp;IOS</a></li>
+				<li><a href="404.html" target="iframe"><i class="fa fa-apple" style="font-size:20px"></i>&nbsp;Mac</a></li>
+				<li><a href="404.html" target="iframe"><i class="fa fa-windows" style="font-size:20px"></i>&nbsp;Windows</a></li>
+			</ul>
+		</div>
+		<!-- HTML iframe框架 -->
+		<div class="boxr">
+			<iframe src="https://www.tool2.cn/" width=100% height=100% frameborder="no" border="0" name="iframe"></iframe>
+		</div>
+		<!-- 右侧栏 -->
+		<div class="sidenav">
+			<a href="#top"><i class="fa fa-chevron-circle-up" style="font-size:25px"></i></a>
+			<a>
+				<div class="di">
+					<img src="img/qq.png" />
+					<i class="fa fa-qq" style="font-size:25px"></i>
+				</div>
+			</a>
+			<a>
+				<div class="di">
+					<img src="img/pay.png" />
+					<i class="fa fa-credit-card" style="font-size:25px"></i>
+				</div>
+			</a>
+			<a>
+				<div class="di">
+					<div class="d">
+						<h2>邮编:401520</br>邮箱:66666@qq.com</h2>
+					</div>
+					<i class="fa fa-envelope" style="font-size:25px"></i>
+				</div>
+			</a>
+		</div>
+	</body>
+</html>

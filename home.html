@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>博客首页</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style_main.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_lb.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_bq.css" />
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+    <body>
+
+        <!-- 导航栏 -->
+        <div class="navbar">
+            <img src="img/head.png" style="width: 40px;height: 43px;" title="Buer" />
+            <a href="home.html">博客首页</a>
+            <a href="article.html">文章精选</a>
+            <a href="soft.html">软件工具</a>
+            <a href="navigation.html">网址聚合</a>
+            <div class="dropdown">
+                <button name="#top" class="dropbtn">联系方式</button>
+                <div class="dropdown-content">
+                    <a href="404.html">电子邮箱</a>
+                    <a href="404.html">办公地址</a>
+                    <a href="404.html">固定电话</a>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="header">
+            <h1>上善若水<br />水利万物而不争</h1>
+            <hr />
+        </div>
+        <!-- 右侧栏 -->
+        <div class="sidenav">
+            <a href="#top"><i class="fa fa-chevron-circle-up" style="font-size:25px"></i></a>
+            <a class="">
+                <div class="di">
+                    <img src="img/qq.png" />
+                    <i class="fa fa-qq" style="font-size:25px"></i>
+                </div>
+            </a>
+            <a class="">
+                <div class="di">
+                    <img src="img/pay.png" />
+                    <i class="fa fa-credit-card" style="font-size:25px"></i>
+                </div>
+            </a>
+            <a class="">
+                <div class="di">
+                    <div class="d">
+                        <h2>邮编:401520</br>邮箱:66666@qq.com</h2>
+                    </div>
+                    <i class="fa fa-envelope" style="font-size:25px"></i>
+                </div>
+            </a>
+        </div>
+        <!-- 博主信息 -->
+        <div class="row">
+            <div class="side">
+                <h2><i class="fa fa-user-circle-o" style="font-size:25px"></i>&nbsp;关于不二青年i</h2>
+                <h5><i class="fa fa-mars" style="font-size:20px"></i>&nbsp;博主照片:</h5>
+                <div class="fakeimg" style="height:35%;background-color: transparent;">
+                    <img src="img/head.png" style="width: 210px;height: 225px;" />
+                </div>
+                <table cellpadding="6">
+                    <tr>
+                        <td><i class="fa fa-calendar-check-o"></i></i>码龄：两年</td>
+                        <td><i class="fa fa-edit"></i>原创：22篇</td>
+                        <td><i class="fa fa-mail-forward"></i>高频转发</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-camera-retro"></i></i>摄影爱好者</td>
+                        <td><i class="fa fa-bicycle"></i>骑行爱好者</td>
+                        <td><i class="fa fa-envelope-open-o"></i>未读消息</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-heart-o"></i>珍藏：88篇</td>
+                        <td><i class="fa fa-diamond"></i>等级：vip</td>
+                        <td><i class="fa fa-bullhorn"></i>最新公告</td>
+                    </tr>
+                </table>
+                <!-- 文章推荐 -->
+                <div class="fakeimg" style="height:40px;">
+                    <p class="fa fa-rocket" style="color:#EA1328"><i> 最新文章</i></p>
+                </div><br />
+                <div class="fakeimg" style="height:120px;text-align: left;">
+                    <ul style="list-style-type:none;color:#999999">
+                        <li><i class="fa fa-file-code-o" style="color: #FFFFFF;"></i>&nbsp;在xxx类中找不到 main 方法, 请将 main
+                            方法定义为……</程序员>
+                        </li><br />
+                        <li><i class="fa fa-file-code-o"
+                                style="color: #FFFFFF;"></i>&nbsp;零基础学Java语言-第六周编程题-“没有任何可输出的长度”是什么错误？ ……</li>
+                    </ul>
+                </div><br />
+                <div class="fakeimg" style="height:120px;text-align: left;">
+                    <ul style="list-style-type:none;color:#999999">
+                        <li><i class="fa fa-file-text-o" style="color: #FFFFFF;"></i>&nbsp;程序员 520 表白方式,打开浏览器，按 ctrl+f
+                            然后输入 ……</程序员>
+                        </li><br />
+                        <li><i class="fa fa-file-text-o" style="color: #FFFFFF;"></i>&nbsp;Linux 关机与重启命令,我们可以使用以下三种命令来关机
+                            Linux ……</li>
+                    </ul>
+                </div><br />
+            </div>
+            <div class="main">
+                <!-- 音乐播放器 -->
+                <audio src="audio/Hallo.mp3" id="audio"></audio>
+                <input type="button" onclick="document.getElementById('audio').play()" value="播放" id="inp" />
+                <input type="button" onclick="document.getElementById('audio').pause()" value="暂停" id="inp" />
+                <p>&nbsp;</p>
+                <!-- 轮播图区域 -->
+                <div class="fakeimg" style="height:350px; overflow: hidden;">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="img/image%20(1).gif" style="width:100%; height: 310px;">
+                            <div class="numbertext">1 — 星空</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="img/image%20(2).gif" style="width:100%; height: 310px;">
+                            <div class="numbertext">2 — 科技</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="img/image%20(3).gif" style="width:100%; height: 310px;">
+                            <div class="numbertext">3 — 动感</div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                <!-- 小球 -->
+                <div id="ti"></div>
+                <!-- 更新文章 -->
+                <div class="fakeimg" style="height:200px;color: #FFFFFF;">
+                    <h3>更新文章及时间排序</h3>
+                    <div class="container">
+                        <img src="img/python.jpg" />
+                        <div class="overlay">
+                            <div class="text">2020.06</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="img/java.jpg" />
+                        <div class="overlay">
+                            <div class="text">2020.04</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="img/jQuery.jpg" />
+                        <div class="overlay">
+                            <div class="text">2019.12</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="img/C.jpg" />
+                        <div class="overlay">
+                            <div class="text">2019.10</div>
+                        </div>
+                    </div>
+                    <h4>更新中……</h4>
+                </div><br />
+                <div class="fakeimg" style="height:150px;color: #D7342E;">
+                    <h2><i class="fa fa-thumbs-o-up"></i>&nbsp;持续更新中……</h2>
+                </div>
+            </div>
+        </div>
+        <!-- 小球 -->
+        <div id="ti"></div>
+        <div class="footer">
+            <div class="foot">
+                <ul style="list-style-type:none;">
+                    <li>重庆工程学院 | 人机交互界面设计 | 期末答辩</li>
+                    <li>不二青年i © 2020 重庆市·巴南区·南泉镇
+                        <a href="login.html"> 更新信息</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/script_lb.js"></script>
+    </body>
+</html>

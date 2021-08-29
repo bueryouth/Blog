@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>用户验证</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                color: #FFFFFF;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                background-color: #000000;
+            }
+
+            img {
+                width: 140Px;
+                height: 150px;
+            }
+
+            table {
+                width: 300px;
+                height: 200px;
+                border-radius: 25px;
+                background-color: #CCCCCC;
+                margin: 0 auto;
+                font-size: 20px;
+                background-color: rgba(216, 216, 216, 0.5);
+            }
+
+            input {
+                outline: none;
+                border-radius: 25px;
+                letter-spacing: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <img src="img/head.png" />
+                    <br /><br /><br /><br />
+                </tr>
+                <tr>
+                    <td>账号</td>
+                </tr>
+                <tr>
+                    <td><input type="id" id="id" /></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="password" /></td>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="button" value="登录" onclick="return login()" />
+                        <input type="reset" value="重置" />
+                    </th>
+                </tr>
+            </table>
+        </form>
+        <script src="https://cdn.bootcss.com/jquery/1.2.3/jquery.min.js"></script>
+        <script src="https://aliyun.ccswust.org/1/js/luoye.js"> </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('body').wpSuperSnow({
+                    flakes: ['https://aliyun.ccswust.org/1/img/007.png ',
+                        'https://aliyun.ccswust.org/1/img/006.png',
+                        'https://aliyun.ccswust.org/1/img/004.png',
+                        'https://aliyun.ccswust.org/1/img/002.png',
+                        'https://aliyun.ccswust.org/1/img/001.png',
+                        'https://aliyun.ccswust.org/1/img/003.png',
+                        'https://aliyun.ccswust.org/1/img/002.png',
+                        'https://aliyun.ccswust.org/1/img/001.png'
+                    ],
+                    totalFlakes: '290',
+                    zIndex: '999999',
+                    maxSize: '25',
+                    maxDuration: '88',
+                    useFlakeTrans: false
+                });
+            });
+
+            function login() {
+                var id = document.getElementById("id");
+                var password = document.getElementById("password");
+                if (id.value == "admin" && password.value == "123456") {
+                    alert("登录成功");
+                    window.location.href = "update.html";
+                } else {
+                    alert("输入错误，请重试！")
+                }
+            }
+        </script>
+    </body>
+</html>

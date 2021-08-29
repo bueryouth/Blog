@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>信息更新</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				color: #FFFFFF;
+				background-image: url(img/bg.gif);
+				background-size: 50%;
+			}
+			table {
+				margin: 0 auto;
+				text-align: left;
+				font-size: 20px;
+				width: 360px;
+				height: 500px;
+				border-radius: 25px;
+				background-color: rgba(216, 216, 216, 0.5);
+			}
+			th {text-align: center;}
+			input{
+				outline: none;
+				border-radius: 25px;
+				letter-spacing:3px;
+			}
+		</style>
+	</head>
+	<body>
+		<br /><br />
+		<form>
+			<table>
+				<tr>
+					<th colspan="2">
+						<h2>信息更新</h2>
+						<hr />
+					</th>
+				</tr>
+				<tr>
+					<td>
+						用&nbsp;户&nbsp;名&nbsp;: </td>
+					<td>
+						<input type="text" name="test" required="required" minlength="6" maxlength="18">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+					</td>
+					<td>
+						<input type="password" name="password" required="required" id="pass" minlength="6" maxlength="18">
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						确认密码:
+					</td>
+					<td>
+						<input type="password" name="password" required="required" id="pass" minlength="6" maxlength="18">
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						出生日期:
+					</td>
+					<td>
+						<input type="date" name="password" required="required">
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:
+					</td>
+					<td>
+						<input type="radio" name="sex" value="nan">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="sex" value="nv" required="required">女
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						兴趣爱好：
+					</td>
+					<td>
+						<input type="checkbox" name="vehicle" value="no.1">阅读
+						<input type="checkbox" name="vehicle" value="no.2">运动
+						<input type="checkbox" name="vehicle" value="no.3">音乐
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						电子邮件:
+					</td>
+					<td>
+						<input type="email" name="test" required="required">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：
+					</td>
+					<td>
+						<textarea rows="2" cols="23"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2"><br />
+						<!-- <input type="submit" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+						<input type="submit" value="提交" />
+						<input type="button" value="首页" onclick="window.location.href='home.html'" />
+						<input type="reset" value="重置" /><br />
+						<hr />
+					</th>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
